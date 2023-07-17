@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <include
-    src="./src/components/Head/head.html"
-    locals='{"title":{"title": "Главная"}}'
-  ></include>
-
-  <body class="mx-auto font-body text-dark">
+<head>
+  <meta charset="utf-8" />
+  <title>Главная</title>
+  <meta name="description" content="Test" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta property="og:title" content="Test" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:description" content="Test" />
+  <link rel="stylesheet" href="../dist/css/index.css" />
+  <!-- Необходимо добавить favicon -->
+</head>
+<body class="mx-auto font-body text-dark">
     <div class="max-w-[1220px] px-[30px] mx-auto">
       <!-- Header -->
       <include
@@ -51,29 +58,9 @@
     </include>
     <!-- Tabs -->
     <include src="./src/components/Tabs/Tabs.html"></include>
-    <!-- <include src="./src/components/Activities/activities.html" locals='{
-          "heading": "Activities",
-          "text1": "Engineering",
-          "text2": "Technical implementation, online and offline sales",
-          "text3": "Staff training and development",
-          "text4": "Sales plans, forecasting and reporting",
-          "text5": "Key account management and existing disti network support",
-          "text6": "Supply chain",
-          "text7": "Own supply channel maintenance and development",
-          "text8": "Local and international payments (incl. CIPS)",
-          "text9": "Batch consolidation in Hong-Kong, international and local delivery",
-          "text10": "Product development and EMS-services in accordance with customer\u0027s",
-          "text11": "Marketing",
-          "text12": "Intensive promotion of product linecard & roadmap to wide customer base",
-          "text13": "Brand promotion and marketing",
-          "text14": "IT",
-          "text15": "Electronic components database maintenance and development",
-          "text16": "Knowledge base maintenance and development: block diagrams, product roadmaps, cross-references, technology insights"
-      }'>
-  </include> -->
     <!-- Footer -->
     <include src="./src/components/Footer/footer.html"></include>
     <!-- Tabs js example -->
     <script type="module" src="js/Tabs.js"></script>
-  </body>
+</body>
 </html>
