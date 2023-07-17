@@ -16,26 +16,25 @@
     <div class="max-w-[1220px] px-[30px] mx-auto">
       <!-- Header -->
       <include
-        src="./src/components/Header/header.html"
+        src="./src/components/header.html"
         locals='{ "currentPage": "Главная" }'
       ></include>
     </div>
     <!-- Компонент Главная -->
     <include
-      src="./src/components/Main/main.html"
+      src="./src/components/main/main.html"
       locals='{
-    "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
-    "link2": {"text": "Войти"},
-    "link3": {"text": "Получить доступ"}
-}'
+          "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
+          "link2": {"text": "Войти"},
+          "link3": {"text": "Получить доступ"}
+      }'
     >
     </include>
     <!-- Компонент О нас -->
-    <include src="./src/components/About/about.html"></include>
+    <include src="./src/components/about/about.html"></include>
     <include
-      src="./src/components/Applications/applications.html"
+      src="./src/components/main/applications.html"
       locals='{
-          "heading": "Направление поставок",
           "text1": "Складское наличие от категорий поставщиков: Производители, Глобальные и региональные дистрибуторы, Реселлеры (Китайский производственный запас)",
           "text2": "Входной контроль на промежуточном складе в г. Шэньчжэнь Рентген и функциональные испытания по запросу ",
           "text3": "Поиск компонентов, размещение и отслеживание заказов он-лайн",
@@ -57,9 +56,12 @@
     >
     </include>
     <!-- Tabs -->
-    <include src="./src/components/Tabs/Tabs.html"></include>
+    <include src="./src/components/main/Tabs1.html"></include>
+    <include src="./src/components/main/Tabs2.html"></include>
+    <include src="./src/components/main/Tabs3.html"></include>
+    <include src="./src/components/main/Tabs4.html"></include>
     <!-- Footer -->
-    <include src="./src/components/Footer/footer.html"></include>
+    <include src="./src/components/footer.html"></include>
     <!-- Tabs js example -->
     <script type="module" src="js/Tabs.js"></script>
 </body>

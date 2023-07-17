@@ -15,20 +15,20 @@
 <body class="mx-auto font-body text-dark">
   <div class="max-w-[1220px] px-[30px] mx-auto">
     <!-- тут мы импортируем header  в котором лежит nav ссылки -->
-    <include src="./src/components/Header/header.html" locals='{ "currentPage": "О компании" }'></include>
+    <include src="./src/components/header.html" locals='{ "currentPage": "О компании" }'></include>
     <main>
-      <!-- Блок about main -->
-      <include src="./src/components/AboutMain/aboutmain.html"></include>
-      <!-- Блок about Catalog  с синими карочками -->
-      <include src="./src/components/AboutCatalog/AboutCatalog.html"></include>
+      <!-- Блок main -->
+      <include src="./src/components/about/main.html"></include>
+      <!-- Блок catalog -->
+      <include src="./src/components/about/catalog.html"></include>
       <div class="text-lg md:text-5xl font-pro">
         Мы поддерживаем потребности внеплановой закупки и пополнения складского запаса, поставки образцов для
         изготовления прототипов устройств, снабжаем промышленное производство
       </div>
-      <!-- Блок about Cards  с белыми карочками -->
-      <include src="./src/components/AboutCards/aboutCards.html"></include>
+      <!-- Блок cards  с белыми карочками -->
+      <include src="./src/components/about/cards.html"></include>
       <!-- Подключаем линк с карточками -->
-      <include src="src/components/OurGeography/OurGeography.html"></include>
+      <include src="src/components/about/geography.html"></include>
 
       <div class="flex flex-wrap items-center mx-auto">
         <h2 class="py-12 text-5xl font-normal text-left pr-52">
