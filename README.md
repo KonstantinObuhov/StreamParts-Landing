@@ -2,7 +2,7 @@
 
 To install project run
 
-- npm i --legacy-peer-deps
+- `npm i --legacy-peer-deps`
 
 Build commands
 
