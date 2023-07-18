@@ -184,7 +184,7 @@ ul li.main__li::before {
 
 /*Tabs */
 
-/* .tab {
+.tab {
   display: flex;
   gap: 4px;
 }
@@ -193,7 +193,7 @@ ul li.main__li::before {
   background: white;
   color: #000;
   cursor: pointer;
-} */
+}
 
 .tab-content {
   position: relative;
