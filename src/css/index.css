@@ -186,7 +186,6 @@ ul li.main__li::before {
 
 .tab {
   display: flex;
-  gap: 4px;
 }
 
 .tablinks {
