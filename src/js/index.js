@@ -1,8 +1,9 @@
 import Menu from "./components/menu";
-import AOS from "aos";
+import Tabs from "./components/tabs";
+/*import AOS from "aos";
 import "aos/dist/aos.css";
 
-AOS.init();
+AOS.init();*/
 
 window.addEventListener("load", function () {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -15,7 +16,18 @@ window.addEventListener("load", function () {
     });
   });
   new Menu;
+  new Tabs;
 });
+
+/*$(document).on('click', 'li.tab-nav-item', function() {
+  let tabId = $(this).attr('data-tab');
+  $('li.tab-nav-item').removeClass('active');
+  $('.tab-nav-items').toggleClass('expanded');
+  $(this).addClass('active');
+  $('.tab-content').removeClass('current');
+  $(this).addClass('current');
+  $('#'+tabId).addClass('current');
+});*/
 
 // let tabsContainer = document.querySelector("#tabs");
 

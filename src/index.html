@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8" />
   <title>Главная</title>
@@ -11,49 +10,14 @@
   <meta property="og:url" content="" />
   <meta property="og:description" content="Test" />
   <link rel="stylesheet" href="../dist/css/index.css" />
-  <!-- Необходимо добавить favicon -->
 </head>
-
-<body class="mx-auto font-body text-dark overflow-auto">
-  <div class="max-w-[1220px] px-[30px] mx-auto">
-    <!-- Header -->
-    <include src="./src/components/header.html" locals='{ "currentPage": "Главная" }'></include>
-  </div>
-  <!-- Компонент Главная -->
-  <include src="./src/components/main/main.html" locals='{
-          "text1": "Электронные компоненты из глобального складского наличия, подбор аналогов и поставки по графику",
-          "link2": {"text": "Войти"},
-          "link3": {"text": "Получить доступ"}
-      }'>
-  </include>
-  <!-- Компонент О нас -->
-  <include src="./src/components/about/about.html"></include>
-  <include src="./src/components/main/applications.html" locals='{
-          "text1": "Складское наличие от категорий поставщиков: Производители, Глобальные и региональные дистрибуторы, Реселлеры (Китайский производственный запас)",
-          "text2": "Входной контроль на промежуточном складе в г. Шэньчжэнь Рентген и функциональные испытания по запросу ",
-          "text3": "Поиск компонентов, размещение и отслеживание заказов он-лайн",
-          "text4": "Партнерские программы с Российскими дистрибуторами",
-          "text5": "Срок поставки 4 - 6 недель",
-          "text6": "Цифровой каталог с параметрическим поиском и кросс-референс",
-          "text7": "Широкий охват по количеству категорий",
-          "text8": "100+ производителей",
-          "text9": "Поставки образцов, отладочных плат и опытных партий",
-          "text10": "Техническая поддержка от команды инженеров",
-          "text11": "Поставки по графику и буферный склад",
-          "text12": "Логистический сервис с пониженным коэффициентом доставки",
-          "text13": "Размещение заказа, контроль отгрузки, промежуточный контроль, доставка, импорт и международные расчеты силами Стримпартс",
-          "text14": "Клиентская поддержка и выделенный импорт-менеджер",
-          "text15": "Отслеживание заказов онлайн",
-          "text16": "20-летний опыт трансграничной торговли",
-          "text17": "Партнерские программы с представителями азиатских производителей в РФ"
-      }'>
-  </include>
-  <!-- Tabs -->
-  <include src="./src/components/main/Tabs1.html"></include>
-  <!-- Footer -->
-  <include src="./src/components/footer.html"></include>
-  <!-- Tabs js example -->
-  <script type="module" src="js/Tabs.js"></script>
+<body class="font-body text-dark">
+  <include src="./src/partials/nav.html"></include>
+  <include src="./src/partials/main/main.html"></include>
+  <include src="./src/partials/main/about.html"></include>
+  <include src="./src/partials/main/supply_ways.html"></include>
+  <include src="./src/partials/main/tabs.html"></include>
+  <include src="./src/partials/footer.html"></include>
+  <script type="module" src="js/index.js"></script>
 </body>
-
 </html>
