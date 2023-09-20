@@ -11,8 +11,8 @@
     "build:parcel": "parcel build ./src/*.html",
     "build:css": "tailwindcss -i ./src/css/index.scss -o ./dist/css/index.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.9.3",
